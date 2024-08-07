@@ -1,6 +1,6 @@
 # flutter_chat_app
 
-Flutter 채팅 구현 앱
+Flutter 구글 로그인 & 채팅 앱 데모앱
 
 ## Getting Started
 
