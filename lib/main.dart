@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_chat_app/presentation/firebase_login.dart';
 import 'package:flutter_chat_app/presentation/login/login_screen.dart';
+import 'package:flutter_chat_app/presentation/sign/signup_screen.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MainApp());
@@ -16,9 +17,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/login',
+      initialRoute: '/sign',
       routes: {
-        '/login': (context) => LoginScreen(),
+        '/sign': (context) => SignUpScreen(),
       },
     );
   }
